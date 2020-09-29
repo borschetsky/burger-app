@@ -1,5 +1,6 @@
 import React from 'react';
 import Auxilery from '../../hoc/Auxilery';
+import classes from './Layout.module.css';
 
 const layout = (props) => {
   return (
@@ -7,7 +8,7 @@ const layout = (props) => {
       <div>
         Toolbar, SideDraw, Backdrop
     </div>
-      <main>
+      <main className={classes.Content}>
         {props.children}
       </main>
     </Auxilery>
